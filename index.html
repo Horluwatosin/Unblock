@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Solving Problems</title>
+  </head>
+  <body>
+    <h1>Solving problems using Javascript</h1>
+    <p class="subtitle">
+      Making decisionsin code: if/else and switch statements
+    </p>
+
+    <div class="container">
+      <!-- Example 1 -->
+      <section class="card">
+        <span class="tag tag-if">If/Else</span>
+        <h2>Grade Calculator</h2>
+        <p>Problem: Turn a test score into a sentence of string based grade</p>
+        <label for="score">Score (0 - 100)</label>
+        <input type="number" id="score" placeholder="e.g. 84" />
+
+        <button onclick="checkGrade()">Check Grade</button>
+
+        <div class="result" id="gradeResult">Result will show here</div>
+      </section>
+      <hr />
+      <!-- example 2 -->
+      <section class="card">
+        <span class="tag tag-switch">Switch</span>
+        <h2>Mini Calculator</h2>
+        <p>Problem: Do Aritmetic Ops</p>
+
+        <div class="row">
+          <div>
+            <label for="num1">First Number</label>
+            <input id="num1" type="number" placeholder="e.g 10" />
+          </div>
+          <div>
+            <label for="num2">Second Number</label>
+            <input id="num2" type="number" placeholder="e.g 50" />
+          </div>
+        </div>
+
+        <label for="operator">Operation</label>
+        <select id="operator">
+          <option value="+">Add(+)</option>
+          <option value="-">Subtract(-)</option>
+          <option value="*">Multiply(*)</option>
+          <option value="/">Divide(/)</option>
+        </select>
+
+        <button onclick="calculate()">Calculate</button>
+
+        <div class="result" id="calcResult">Result will show here</div>
+      </section>
+    </div>
+
+    <!-- // Js -->
+    <script src="./script.js"></script>
+  </body>
+</html>
